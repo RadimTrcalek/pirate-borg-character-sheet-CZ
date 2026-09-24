@@ -1,1 +1,15 @@
-{"name":"Pirate Borg – Deník","version":"0.9.1","manifest_version":1,"description":"Český univerzální deník postavy pro Pirate Borg – veřejná beta.","icon":"/icon.svg","action":{"title":"Pirate Borg – Deník","icon":"/icon.svg","popover":"/","height":800,"width":720},"background_url":"/background.html"}
+{
+  "name": "Pirate Borg – Deník",
+  "version": "0.9.2",
+  "manifest_version": 1,
+  "description": "Český univerzální deník postavy pro Pirate Borg – veřejná beta.",
+  "icon": "/icon.svg",
+  "action": {
+    "title": "Pirate Borg – Deník",
+    "icon": "/icon.svg",
+    "popover": "/",
+    "height": 800,
+    "width": 720
+  },
+  "background_url": "/background.html"
+}
