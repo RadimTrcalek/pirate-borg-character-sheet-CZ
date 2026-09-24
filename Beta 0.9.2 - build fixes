@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset="UTF-8" /></head><body><script type="module" src="/src/background.ts"></script></body></html>
+
+<div id="root"></div><script type="module" src="/src/main.tsx"></script>
+
+{
+  "name": "pirate-borg-character-sheet",
+  "private": true,
+  "version": "0.9.2",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "@owlbear-rodeo/sdk": "latest",
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "typescript": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest"
+  }
+}
+
+{"compilerOptions":{"target":"ES2020","useDefineForClassFields":true,"lib":["ES2020","DOM"],"allowJs":false,"skipLibCheck":true,"esModuleInterop":true,"allowSyntheticDefaultImports":true,"strict":true,"forceConsistentCasingInFileNames":true,"module":"ESNext","moduleResolution":"Bundler","resolveJsonModule":true,"isolatedModules":true,"noEmit":true,"jsx":"react-jsx"},"include":["src"]}
+
+import { defineConfig } from "vite";
+import { resolve } from "path";
+
+export default defineConfig({
+  server: { cors: { origin: "https://www.owlbear.rodeo" } },
+  build: { rollupOptions: { input: { main: resolve(__dirname,"index.html"), background: resolve(__dirname,"background.html") } } },
+});
