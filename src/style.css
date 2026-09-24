@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Pirata+One&family=Special+Elite&display=swap');
+:root{font-family:Georgia,'Times New Roman',serif;color:#111;background:#d8d8d8;--ink:#111;--blood:#7d1717;--paper:#fff;--paper2:#fff;--faint:#a8a8a8}*{box-sizing:border-box}body{margin:0}button,input,textarea{font:inherit;color:var(--ink)}button{cursor:pointer}main{max-width:720px;margin:auto;min-height:100vh;background:#fff;padding:0 18px 26px;box-shadow:0 0 24px #0004;position:relative;overflow:hidden}
+.hero{height:116px;position:relative;border-bottom:5px solid var(--ink);display:flex;align-items:flex-end;padding:9px 0 7px;overflow:hidden}.pbLogo{position:absolute;left:0;top:5px;width:195px;height:auto;mix-blend-mode:multiply;z-index:2}.heroInk{position:absolute;right:-30px;top:-125px;width:260px;height:390px;background:url('/pirate-ink-left.png') center 31%/cover no-repeat;filter:contrast(1.45) grayscale(1);opacity:.24;mix-blend-mode:multiply;transform:rotate(5deg)}.hero:after{content:'';position:absolute;right:122px;bottom:0;width:105px;height:30px;border-top:3px solid var(--blood);transform:skew(-28deg);opacity:.8}.hero h1{margin:0 15px 0 auto;position:relative;z-index:3;font-family:'Pirata One','IM Fell English SC',serif;font-size:35px;letter-spacing:1px;color:var(--blood);text-shadow:1px 1px 0 #fff}
+header{display:flex;align-items:center;border-bottom:1px solid var(--ink);padding:9px 2px 8px}.name{width:100%;border:0;border-bottom:2px solid var(--ink);background:transparent;font-family:'Special Elite',Georgia,serif;font-size:20px;padding:5px 7px}.classes{display:flex;gap:7px;align-items:center;padding:9px 0;border-bottom:3px double var(--ink);flex-wrap:wrap}.classes>b{font-family:'IM Fell English SC',serif;color:var(--blood);letter-spacing:1px}.classEntry{display:inline-flex;align-items:center}.classEntry input{min-width:120px;max-width:155px}.addClass{border:1px solid var(--ink);background:#fff;font-weight:bold;min-width:34px;min-height:32px}
+.topgrid,.magic,.twocol{display:grid;grid-template-columns:1fr 1fr;gap:14px;border-bottom:4px double var(--ink);padding:12px 0}.topgrid>section+section,.magic>div{border-left:1px solid var(--ink);padding-left:14px}h2,h3{font-family:'IM Fell English SC',Georgia,serif;color:var(--blood);margin:0 0 7px;font-weight:700}h2{font-size:21px;border-bottom:2px solid var(--ink);letter-spacing:.5px}h3{font-size:15px;letter-spacing:.8px}.stat{display:grid;grid-template-columns:1fr 52px 68px;gap:6px;align-items:center;margin:5px 0}.stat b{font-family:'IM Fell English SC',serif;letter-spacing:.5px}.stat input{text-align:center;font-weight:bold}.test{font-family:'IM Fell English SC',serif;font-weight:bold;background:#111;color:#fff;border:1px solid #111;padding:5px}.test:hover{background:var(--blood)}.topgrid label{display:block;margin:9px 0}.num{display:inline-flex}.num input,.tiny{width:44px;text-align:center}.num button{width:30px;background:#fff;border:1px solid #777}.small{width:72px}.carry{margin-top:13px;border-top:1px solid var(--ink);padding-top:8px}.carry>b{font-family:'IM Fell English SC',serif;color:var(--blood);font-size:17px}.carry p{margin:6px 0;padding:7px;border-left:5px solid var(--blood);font-weight:bold;background:#f6eded}.tip{margin-left:5px;cursor:help;color:var(--blood)}
+.list{margin-bottom:9px}.row{display:flex;gap:4px;margin:4px 0;align-items:center}.row input{min-width:0}.grow{flex:1}.detail{flex:1.4}.x{border:0;background:transparent;color:var(--blood);font-family:Arial,sans-serif;font-size:23px;line-height:1;padding:3px 7px;opacity:.7}.x:hover{opacity:1;background:#f5e7e7}.add{font-family:'IM Fell English SC',serif;color:var(--blood);border:0;background:transparent;padding:5px 0;font-weight:bold}.ritualHead{border-top:2px solid var(--ink);padding-top:7px}.ritualHead>b{font-family:'IM Fell English SC',serif;color:var(--blood)}.ritualHead small{display:block;margin-left:2px}.weapons{border-bottom:4px double var(--ink);padding:12px 0}.weapons .list{border-bottom:1px solid #aaa;padding-bottom:5px}.twocol{padding-top:12px}.sectionTitle{display:flex;align-items:center;justify-content:space-between;margin-top:12px}.sectionTitle h2{flex:1}.sectionTitle label{font-family:'IM Fell English SC',serif;color:var(--blood);font-weight:bold}.silver{width:75px}.fold{font-family:'IM Fell English SC',serif;color:var(--blood);width:100%;display:flex;justify-content:space-between;border:0;border-bottom:3px double var(--ink);background:transparent;padding:12px 2px;font-size:20px;text-align:left;font-weight:bold}textarea{width:100%;min-height:90px;background:#fff;border:1px solid #999;padding:8px}.background{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px 0}.background label{position:relative}.background label>b{font-family:'IM Fell English SC',serif;color:var(--blood);letter-spacing:.5px}.background textarea{min-height:78px;padding-right:48px}.bgDie{position:absolute;right:6px;top:22px;width:42px;height:42px;border:2px solid var(--ink);background:#fff;color:var(--blood);font-size:31px;line-height:1}.background label:nth-last-child(-n+2){grid-column:span 2}input{background:#fff;border:1px solid #999;padding:4px}
+.bottomOrnament{height:88px;margin:16px -18px 0;position:relative;overflow:hidden;border-top:4px solid var(--ink);border-bottom:1px solid var(--ink);background:#fff}.bottomOrnament:before{content:'';position:absolute;inset:-115px 20px -125px 20px;background:url('/pirate-ink-footer.png') center 66%/620px auto no-repeat;filter:grayscale(1) contrast(1.55);opacity:.24;mix-blend-mode:multiply}.bottomOrnament:after{content:'☠';position:absolute;left:50%;top:18px;transform:translateX(-50%) rotate(-5deg);font-size:43px;color:var(--blood);font-family:serif}footer{text-align:center;font-family:'IM Fell English SC',serif;font-size:12px;margin-top:7px;opacity:.62;letter-spacing:1px}
+.veil{position:fixed;inset:0;background:#000a;display:flex;align-items:center;justify-content:center;z-index:50;padding:18px}.rollCard{width:min(410px,92vw);position:relative;text-align:center;background:#fff;border:5px solid #111;padding:24px 28px 22px;box-shadow:9px 10px 0 #0008;transform:rotate(-.35deg)}.rollCard:before,.rollCard:after{content:'☠';position:absolute;color:var(--blood);font-size:27px;top:12px}.rollCard:before{left:16px}.rollCard:after{right:16px}.closeRoll{position:absolute;right:5px;top:3px;border:0;background:transparent;font-size:26px}.rollKicker{font-family:'IM Fell English SC',serif;color:var(--blood);letter-spacing:3px;font-size:17px}.rollLabel{font-family:'Pirata One',serif;font-size:33px;margin-top:4px}.rollResult{font-family:'Pirata One',serif;color:var(--blood);font-size:102px;line-height:.95;margin:8px 0 0}.rollMod{font-family:'Special Elite',serif;font-size:18px;margin-bottom:17px}.rollOk{font-family:'IM Fell English SC',serif;background:#111;color:#fff;border:1px solid #111;padding:9px 26px;font-weight:bold;letter-spacing:1px}.rollOk:hover{background:var(--blood)}
+@media(max-width:560px){main{padding-left:12px;padding-right:12px}.hero{height:105px}.pbLogo{width:170px}.heroInk{right:-55px;opacity:.18}.hero h1{font-size:28px;margin-right:6px}.topgrid,.magic,.twocol,.background{grid-template-columns:1fr}.topgrid>section+section,.magic>div{border-left:0;padding-left:0;border-top:2px solid var(--ink);padding-top:10px}.background label:nth-last-child(-n+2){grid-column:auto}.row{flex-wrap:wrap}.detail{flex-basis:100%}.name{width:100%}.bgDie{width:44px;height:44px;font-size:32px}.bottomOrnament{margin-left:-12px;margin-right:-12px}}
+/* v0.4: čistší hlavička, bezpečné tooltipy a přetékání */
+.hero{height:105px;display:flex;align-items:center;justify-content:center;padding:8px 16px;border-bottom:0;overflow:hidden;background:#fff}
+.pbLogo{position:static;width:min(96%,620px);height:88px;object-fit:fill;mix-blend-mode:multiply;z-index:auto}
+.heroInk,.hero:after,.hero h1,.bottomOrnament{display:none!important}
+.sheetTitle{font-family:'IM Fell English SC',Georgia,serif;color:var(--blood);font-size:27px;font-weight:700;letter-spacing:1.5px;text-align:center;border-top:5px solid var(--ink);border-bottom:2px solid var(--ink);padding:5px 0 4px}
+.magic>*{min-width:0}.magic .list,.magic .row,.magic input{min-width:0;max-width:100%}.magic .row.plain .grow{flex:1 1 38%}.magic .row.plain .detail{flex:1 1 48%;width:0}.classTip{font-size:18px;cursor:help;align-self:center}.classEntry{max-width:220px}.classEntry input{min-width:105px;max-width:155px}
+footer{border-top:4px double var(--ink);padding-top:9px;margin-top:18px}
+@media(max-width:560px){.hero{height:90px}.pbLogo{height:74px;width:100%}.sheetTitle{font-size:23px}.classEntry{max-width:100%}}
+
+/* v0.5 — sjednocená hierarchie nadpisů, kompaktnější Pozadí a tři zdroje */
+:root{--blood:#741313}
+.hero{height:112px;padding:10px 12px 8px;justify-content:center}
+.pbLogo{position:static;width:auto;height:auto;max-width:78%;max-height:92px;object-fit:contain;object-position:center;mix-blend-mode:multiply}
+.sheetTitle,h2,.fold,.ritualHead>b{
+  font-family:'IM Fell English SC',Georgia,serif;
+  color:var(--blood);font-size:21px;font-weight:700;letter-spacing:.7px;
+}
+.sheetTitle{font-size:23px;letter-spacing:1.2px}
+h2{border-bottom:2px solid var(--ink);margin:0 0 7px}
+.fold{font-size:21px}
+/* vedlejší názvy jsou černé a menší */
+h3,.sectionTitle label,.background label>b,.classes>b,.stat b,.recovery,.minorTitle{
+  font-family:'IM Fell English SC',Georgia,serif;color:var(--ink);font-size:15px;font-weight:700;letter-spacing:.55px;
+}
+.add,.tip,.x{color:var(--ink)}
+.test{color:#fff}
+/* Životy / dary / nosnost: tři rovnocenné bloky oddělené čarami */
+.resources{display:grid;grid-template-columns:1fr;gap:0}
+.resources .resourceBlock{padding:0 0 10px;margin:0 0 10px;border-bottom:1px solid var(--ink)}
+.resources .resourceBlock:last-child{border-bottom:0;margin-bottom:0}
+.resources .resourceBlock h2{margin-bottom:8px}
+.resourceValue,.carryValue{display:flex;align-items:center;gap:5px}
+.recovery{display:block;margin-top:7px!important}
+.carry{margin-top:0;border-top:0;padding-top:0}
+.carry>b{color:var(--ink)}
+/* Pozadí: kostka menší, podnadpisy černé */
+.background textarea{padding-right:40px}
+.bgDie{right:6px;top:25px;width:32px;height:32px;border:1.5px solid var(--ink);color:var(--ink);font-size:22px}
+/* Tooltipy/detailní pole nikdy nesmějí roztlačit pravý sloupec */
+.magic>*,.list,.row{min-width:0}.row input{max-width:100%}.detail{width:0;min-width:0}
+@media(max-width:560px){.hero{height:96px}.pbLogo{max-width:86%;max-height:78px}.bgDie{width:32px;height:32px;font-size:22px}.sheetTitle,h2,.fold,.ritualHead>b{font-size:19px}.sheetTitle{font-size:21px}}
+.hero{min-height:118px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#fff!important}
+.pbLogo{width:auto!important;height:auto!important;max-width:82%!important;max-height:108px!important;object-fit:contain!important;display:block}
+.abilityHead{font-family:var(--display);font-weight:900;color:var(--red);font-size:20px;letter-spacing:.04em;border-bottom:2px solid #111;padding-bottom:4px;margin-bottom:4px}
+.dailyMagic{float:right;color:#111;font-family:Georgia,serif;font-size:12px;letter-spacing:0;font-weight:700}.dailyMagic small{font-weight:400}
+.background .bgDie{font-size:19px!important;width:34px!important;height:34px!important;line-height:30px!important}
+
+/* v0.7 — lokální CZ fonty a sjednocená typografie */
+@font-face{font-family:'Alegreya Sans PB';src:url('/AlegreyaSans-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Alegreya Sans PB';src:url('/AlegreyaSans-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'Alegreya Sans PB';src:url('/AlegreyaSans-Italic.ttf') format('truetype');font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:'IM Fell PB';src:url('/IMFeENrm28P.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'IM Fell PB';src:url('/IMFeENit28P.ttf') format('truetype');font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:'Saltpetre PB';src:url('/Saltpetre.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+:root{font-family:'Alegreya Sans PB',Arial,sans-serif;--display:'IM Fell PB',Georgia,serif;--red:#741313}
+body,button,input,textarea{font-family:'Alegreya Sans PB',Arial,sans-serif}
+.sheetTitle{font-family:'Saltpetre PB','IM Fell PB',serif;font-weight:400;font-size:29px}
+h2,.fold,.abilityHead,.ritualHead>b,.magic .list>h3,.twocol .list>h3{font-family:'IM Fell PB',Georgia,serif!important;color:var(--blood)!important;font-size:21px!important;font-weight:400!important;letter-spacing:.35px!important}
+h3,.classes>b,.stat b,.minorTitle,.background label>b{font-family:'Alegreya Sans PB',Arial,sans-serif;color:#111;font-weight:700}
+.test,.add,.rollKicker,.rollOk{font-family:'Alegreya Sans PB',Arial,sans-serif}
+.rollLabel,.rollResult{font-family:'IM Fell PB',Georgia,serif}
+.name{font-family:'Alegreya Sans PB',Arial,sans-serif}
+/* datalist pole a detail zůstávají kompaktní */
+.magic .row.plain .grow{flex:1 1 42%}
+/* Distribuční varianta: fonty se načítají jako webfonty, soubory fontů nejsou součástí balíčku. */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400;1,700&family=IM+Fell+English:ital@0;1&display=swap');
+:root{font-family:'Alegreya Sans',Arial,sans-serif;--display:'IM Fell English',Georgia,serif}
+body,button,input,textarea{font-family:'Alegreya Sans',Arial,sans-serif}
+.sheetTitle,h2,.fold,.abilityHead,.ritualHead>b,.magic .list>h3,.twocol .list>h3{font-family:'IM Fell English',Georgia,serif!important}
+.sheetTitle{font-family:'IM Fell English',Georgia,serif!important;font-size:29px;font-weight:400}
+.startGear{border:1px solid #222;background:#fff;padding:4px 8px;font-weight:700;font-size:12px;cursor:pointer}.startGear:hover{background:#eee}
+
+/* 0.8.1 – full-width abilities and safe character reset */
+.abilitiesFull{border-bottom:1px solid var(--ink);padding:12px 0}
+.abilitiesFull .abilityHead{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.dailyCounters{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px 18px;font-family:'Alegreya Sans PB',Arial,sans-serif;font-size:14px;color:var(--ink);letter-spacing:0}
+.dailyMagic{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.dailyMagic small{flex-basis:100%;text-align:right;font-size:11px;font-weight:400}
+.relicRitual{display:grid;grid-template-columns:1fr 1fr;gap:14px;border-bottom:4px double var(--ink);padding:12px 0}
+.relicRitual>div+div{border-left:1px solid var(--ink);padding-left:14px}
+.resetCharacter{margin-left:auto;border:1px solid var(--blood);background:transparent;color:var(--blood);font-family:'IM Fell English',Georgia,serif;padding:5px 9px;cursor:pointer}
+.resetCharacter:hover{background:var(--blood);color:#fff}
+@media(max-width:700px){.abilitiesFull .abilityHead{display:block}.dailyCounters{justify-content:flex-start;margin-top:8px}.dailyMagic small{text-align:left}.relicRitual{grid-template-columns:1fr}.relicRitual>div+div{border-left:0;padding-left:0;border-top:2px solid var(--ink);padding-top:10px}.resetCharacter{margin-left:0}}
+
+/* v0.8.2 — full-width Schopnosti, Relikvie a Rituály */
+.abilitiesFull,.relicFull,.ritualFull{border-bottom:1px solid var(--ink);padding:12px 0}
+.abilitiesFull .abilityHead,.ritualFull .ritualHead{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.abilitiesFull .abilityHead h2,.ritualFull .ritualHead h2,.relicFull .list>h3{font-family:'IM Fell English',Georgia,serif!important;color:var(--blood)!important;font-size:21px!important;font-weight:400!important;letter-spacing:.35px!important;border-bottom:2px solid var(--ink);margin:0 0 7px;padding:0 0 2px;line-height:1.1}
+.abilitiesFull .abilityHead h2,.ritualFull .ritualHead h2{flex:1}
+.relicFull .list>h3{display:block}
+.ritualCounter{display:flex;align-items:center;gap:4px;flex-wrap:wrap;font-family:'Alegreya Sans',Arial,sans-serif;font-size:14px;color:var(--ink)}
+.ritualCounter small{flex-basis:100%;text-align:right;font-size:11px}
+.relicFull .row,.ritualFull .row{width:100%}
+.relicFull .row .detail,.ritualFull .row .detail{flex:1 1 58%;width:auto}
+@media(max-width:700px){.abilitiesFull .abilityHead,.ritualFull .ritualHead{display:block}.ritualCounter{margin:5px 0 8px}.ritualCounter small{text-align:left}}
+
+/* v0.9 — jasné oddělení hlavních sekcí */
+.abilitiesFull,.relicFull,.ritualFull,.weapons{border-top:4px double var(--ink);border-bottom:0;padding:12px 0}
+/* horní čáru Schopností už tvoří předchozí blok; nenecháváme dvě dvojité čáry těsně u sebe */
+.topgrid + .abilitiesFull{border-top:0}
+.notesFold{border-top:4px double var(--ink);margin-top:12px}
+
+/* v0.9.1 — sdílené hody a krátká historie */
+.historyFold{border-top:4px double var(--ink);margin-top:12px}
+.historyFold + .rollHistory + .notesFold,.notesFold{margin-top:0}
+.rollHistory{border-bottom:1px solid var(--ink);padding:5px 0 12px}
+.rollHistory>p{margin:4px 0;font-style:italic}
+.historyRow{display:grid;grid-template-columns:minmax(120px,1.5fr) minmax(90px,1fr) auto auto auto auto;gap:8px;align-items:center;padding:5px 3px;border-bottom:1px dotted #777;font-size:14px}
+.historyRow:last-child{border-bottom:0}.historyRow em{font-style:normal;font-weight:700;color:var(--blood)}
+.rollSpecial{margin-top:5px;font-family:'IM Fell English',Georgia,serif;color:var(--blood);font-size:20px}
+@media(max-width:620px){.historyRow{grid-template-columns:1fr auto auto}.historyRow span:nth-of-type(1){grid-column:1}.historyRow em{grid-column:1/-1}}
